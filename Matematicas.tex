@@ -1,9 +1,18 @@
-\documentclass[letterpaper,12pt]{report}
-\usepackage[T1]{fontenc}
+\documentclass{tufte-book}
+\usepackage[spanish,es-noquoting]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
+\usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{enumerate}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes, arrows, decorations.markings}
+
+\setcounter{secnumdepth}{0}
+\numberwithin{equation}{chapter}
+
 
 
 
@@ -40,8 +49,8 @@
     \chapter{Vectores propios Generalizados}
 %--------------------------------------
 %       ECUACIONES DIFERENCIALES
-%--------------------------------------    
-  \part{Ecuaciones difereciales} 
+%--------------------------------------
+  \part{Ecuaciones difereciales}
     \chapter{Resolucion de Ec.diferenciales}
     \chapter{Existencia de unidad de solucion de E.D.}
     \chapter{Solucion aproximada}
