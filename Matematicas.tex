@@ -1,7 +1,11 @@
+%--------------------------------------
+%       CONFIGURACIONES
+%--------------------------------------
 \documentclass{tufte-book}
 \usepackage[spanish,es-noquoting]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{bbm}
@@ -13,14 +17,19 @@
 \setcounter{secnumdepth}{0}
 \numberwithin{equation}{chapter}
 
-
-
-
+\newtheorem{definicion}{Definición}
+\newtheorem{lema}{Lema}
+\newtheorem{teorema}{Teorema}
+\newtheorem{demostracion}{Demostración}
+%--------------------------------------
+%       TITULO
+%--------------------------------------
 \title{Matematicas Cinvestav}
-\author{Generaci\`on 2014}
-
+\author{Generación 2014}
+%--------------------------------------
+%       INICIO DEL DOCUMENTO
+%--------------------------------------
 \begin{document}
-
   \maketitle
   \tableofcontents
 %--------------------------------------
@@ -31,6 +40,7 @@
       \input{Grupo.tex}
       \input{GruposAbelianos.tex}
       \input{Subgrupo.tex}
+      \input{SubgrupoNormal.tex}
     \chapter{Homorfismos de grupo}
       \input{Homomorfismos.tex}
     \chapter{Anillos}
@@ -39,20 +49,23 @@
 %       ALGEBRA LINEAL
 %--------------------------------------
   \part{Algebra Lineal}
-    \chapter{Espacios Vectoriales ,Isomorfismos}
+    \chapter{Espacios vectoriales, Isomorfismos}
     \chapter{Operadores lineales}
-    \chapter{Funciones Lineales}
+    \chapter{Funciones lineales}
     \chapter{Espacios duales}
-    \chapter{Teorema de Caley Hamilton}
-    \chapter{Diagolizacion}
-    \chapter{Forma canonica de Jordan}
-    \chapter{Vectores propios Generalizados}
+    \chapter{Teorema de Caley-Hamilton}
+    \chapter{Diagonalizacion}
+    \chapter{Forma canónica de Jordan}
+    \chapter{Vectores propios generalizados}
 %--------------------------------------
 %       ECUACIONES DIFERENCIALES
 %--------------------------------------
   \part{Ecuaciones difereciales}
-    \chapter{Resolucion de Ec.diferenciales}
-    \chapter{Existencia de unidad de solucion de E.D.}
-    \chapter{Solucion aproximada}
-    \chapter{Relacion entre soluciones Aproximadas y exactas}
+    \chapter{Resolución de ecuaciones diferenciales}
+    \chapter{Existencia y unicidad de la solución de una ED}
+    \chapter{Solución aproximada}
+    \chapter{Relación entre soluciones aproximadas y exactas}
+%--------------------------------------
+%       FIN DEL DOCUMENTO
+%--------------------------------------
 \end{document}
