@@ -1,0 +1,74 @@
+%--------------------------------------
+%       CONFIGURACIONES
+%--------------------------------------
+\documentclass{tufte-book}
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{todonotes}
+
+\usetikzlibrary{shapes, arrows, decorations.markings}
+
+\setcounter{secnumdepth}{0}
+\numberwithin{equation}{chapter}
+
+\newtheorem{definicion}{Definición}
+\newtheorem{lema}{Lema}
+\newtheorem{teorema}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{proposicion}{Proposición}
+%--------------------------------------
+%       TITULO
+%--------------------------------------
+\title{Matemáticas \\ Cinvestav}
+\author{Generación 2014}
+%--------------------------------------
+%       INICIO DEL DOCUMENTO
+%--------------------------------------
+\begin{document}
+  \maketitle
+  \tableofcontents
+%--------------------------------------
+%       ALGEBRA ABSTRACTA
+%--------------------------------------
+  \part{Algebra abstracta}
+    \chapter{Grupos}
+      \input{Grupo.tex}
+      \input{GruposAbelianos.tex}
+      \input{Subgrupo.tex}
+      \input{SubgrupoNormal.tex}
+    \chapter{Homorfismos de grupo}
+      \input{Homomorfismos.tex}
+    \chapter{Anillos}
+    \chapter{Dominios}
+%--------------------------------------
+%       ALGEBRA LINEAL
+%--------------------------------------
+  \part{Algebra Lineal}
+    \chapter{Espacios vectoriales}
+    \input{EspaciosVectoriales.tex}
+    \chapter{Operadores lineales}
+    \chapter{Funciones lineales}
+    \chapter{Espacios duales}
+    \chapter{Teorema de Caley-Hamilton}
+    \chapter{Diagonalizacion}
+    \chapter{Forma canónica de Jordan}
+    \chapter{Vectores propios generalizados}
+%--------------------------------------
+%       ECUACIONES DIFERENCIALES
+%--------------------------------------
+  \part{Ecuaciones difereciales}
+    \chapter{Resolución de ecuaciones diferenciales}
+    \chapter{Existencia y unicidad de la solución de una ED}
+    \chapter{Solución aproximada}
+    \chapter{Relación entre soluciones aproximadas y exactas}
+%--------------------------------------
+%       FIN DEL DOCUMENTO
+%--------------------------------------
+\end{document}
