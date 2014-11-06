@@ -1,0 +1,43 @@
+\newpage
+\section{Combinacion lineal}
+\begin{definicion}
+	Se dice que $\beta \in V $ es una combinaci\`on lineal de vetores $\alpha , \dots , \alpha_n$ exiten $c_1, \dots , c_n \in F$ tales que
+			\begin{equation}
+				\beta = \sum\limits{i=1}{n} ci \ di \nonumber
+			\end{equation}
+
+	\end{definicion}
+
+	
+
+ 
+ 
+ \begin{definicion}
+ 	Sea $\alpha_1 \dots \alpha_k$ en $V$ \& $\mathcal{L}(\alpha_1 \dots \alpha_k)=\{ \beta	| \beta$ es combinaci\`on lineal de $\alpha_1 \ \dots \ \alpha_k$ esto es un s.e.v. de $V$ \& se llama subespacio generado por $\alpha_i \leq i = k$ o bien se dice que $\alpha_1 \dots \alpha_k$ genera a $\mathcal{L}$
+ \end{definicion}
+
+En general \\ Si $A \neq 0$	\& si $ A \subset V $ entonces $\mathcal{L} (A)= \{ \beta | \beta $ es combinaci\`on lineal de los elemntos de $A \ \}$
+\begin{proposicion}
+			La intersecion de cualquier coleci\`on de subespacio de $V$ es un subespacio de $V$	 	 										
+	 	 									\end{proposicion}	 	 									
+\begin{proof}
+Sea $ \{ Wa | \alpha \in I \} $ \& sea $ W \triangleq \bigcap W \alpha $
+	
+		\begin{enumerate}[i]
+			\item  $w$ no es vacio  $\in W$ pues $\vec{a} \in W \alpha \ \forall \alpha \in I$
+
+			\item $\alpha , \beta \in W \rightarrow \alpha , \beta \in W \alpha \ \forall \ \alpha \in I$  $\rightarrow \ \alpha + \beta \ \in W \alpha \ \forall \ \alpha \in I \ \rightarrow \ \alpha + \beta \in W$
+
+			\item  Sea $\beta \in W $ \& sea $r \in \mathcal{F} \rightarrow \ r ,\beta \in W \alpha \ \forall \alpha\in I \ \rightarrow \ r, \beta \in W$
+		\end{enumerate}
+
+\end{proof}
+
+\begin{observacion}
+ 		La uni\`on de los subespacios no necesariamente es espacio vectorial
+
+\end{observacion}
+
+\begin{ejemplo}
+	 En $\mathbb{R}^2 $ definimos \\ $W_1 = \{ ( x_1 , 0 ) | x_1 \in R \} \subset \mathbb{R}^2$ \\ $W_2 = \{ ( 0,x_2 ) | x_2 \in R \} \subset \mathbb{R}^2 $ \\ $(x_1,0)+(0,x_2)= (x_1 , x_2) \notin W_1 \cup W_2$ \\ $W_1 \cup W_2 = \{ ( x_1 , 0 ),( 0,x_2 ) \} | x_1 , x_2 \in \mathbb{R}$
+\end{ejemplo}
