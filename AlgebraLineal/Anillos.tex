@@ -1,0 +1,68 @@
+\newpage
+\section{Definiciones}
+    \begin{definicion}
+        Un conjunto no vacio $R$ es un anillo si tiene definidas dos operaciones $(+, \cdot)$ tales que:
+        \begin{enumerate}[a)]
+            \item $a, b \in R \implies a+b \in R$
+            \item $a + (b + c) = (a + b) + c \quad \forall a, b, c \in R$
+            \item $a + b = b + a \quad \forall a, b, \in R$
+            \item $\exists 0 \in R \text{ tal que } a + 0 = a \quad \forall a \in R$
+            \item $\exists b \in R \text{ tal que } a + b = 0 \quad \forall a \in R$
+        \end{enumerate}
+
+        De estas propiedades podemos concluir que $R$ es un grupo abeliano con respecto a $(+)$, pero aun tenemo lo siguiente:
+
+        \begin{enumerate}[1)]
+            \item $a, b \in R \implies a \cdot b \in R$
+            \item $a \cdot (b \cdot c) = (a \cdot b) \cdot c \quad \forall a, b, c\in R$
+        \end{enumerate}
+
+        De estas propiedades podemos concluir que $R$ es un semigrupo con respecto a $(\cdot)$, y ademas:
+
+        \begin{enumerate}[i)]
+            \item $a \cdot (b + c) = a \cdot b + a \cdot c \quad \forall a, b, c \in R$
+            \item $(b + c) \cdot a = b \cdot a + c \cdot a \quad \forall a, b, c \in R$
+        \end{enumerate}
+    \end{definicion}
+
+    \begin{definicion}
+        Diremos que un anillo $R$ es un anillo con identidad si existe un $1 \in R$, con $1 \ne 0$, tal que:
+
+        \begin{equation}
+            a \cdot 1 = 1 \cdot a \quad \forall a \in R
+        \end{equation}
+    \end{definicion}
+
+    \begin{definicion}
+        Un anillo $R$ es un anillo conmutativo si:
+
+        \begin{equation}
+            a \cdot b = b \cdot a \quad \forall a, b \in R
+        \end{equation}
+    \end{definicion}
+
+    \begin{definicion}
+        Sea $R$ un anillo y $a \in R$ con $a \ne 0$, diremos que $a$ es divisor de cero, si existe $b \in R$ con $b \ne 0$ tal que:
+
+        \begin{equation}
+            a \cdot b = 0 \quad \text{(divisor por la derecha)}
+        \end{equation}
+
+        o bien si existe un $c \in R$ con $c \ne 0$, tal que:
+
+        \begin{equation}
+            c \cdot a = 0 \quad \text{(divisor por la izquierda)}
+        \end{equation}
+    \end{definicion}
+
+    \begin{definicion}
+        Sea $R$ un anillo con identidad. Diremos que $R$ es un anillo con división si existe $b \in R$ tal que:
+
+        \begin{equation}
+            a \cdot b = b \cdot a = 1 \quad \forall 0 \ne a \in R
+        \end{equation}
+    \end{definicion}
+
+    \begin{definicion}
+        Un campo es un anillo con división, que ademas es conmutativo, es decir, un campo es un grupo abeliano con respecto a $(+)$ y a $(\cdot)$.
+    \end{definicion}
