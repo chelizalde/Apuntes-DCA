@@ -60,3 +60,92 @@
 
         a esto se le conoce como propiedad de absorción.
     \end{definicion}
+
+    \begin{corolario}
+        Si $\varphi: R \to R'$ es un homomorfismo, entonces $k = \ker{\varphi}$ es un ideal de $R$.
+    \end{corolario}
+
+    \begin{definicion}
+        Sea $R$ anillo e $I$ un ideal de $R$, entonces $\sfrac{R}{I}$ (anillo cociente) es un grupo con la suma de clases de equivalencia.
+
+        \begin{equation}
+            (a + I) + (b + I) = (a + b) + I \quad \forall a, b \in R
+        \end{equation}
+    \end{definicion}
+
+    \begin{definicion}
+        Definimos el producto como:
+
+        \begin{equation}
+            (a + I)(b + I) = ab + I \quad \forall a, b \in R
+        \end{equation}
+    \end{definicion}
+
+    \begin{observacion}
+        Sea $R$ un anillo, tenemos que $\{ 0 \}$ y $R$ son ideales de $R$ y triviales.
+    \end{observacion}
+
+    \begin{definicion}
+        Si $I$ es un ideal de $R$ e $I \ne R$, decimos que $I$ es un ideal propio.
+    \end{definicion}
+
+    \begin{observacion}
+        Sea $R$ un anillo con identidad e $I$ ideal de $R$ tal que $1 \in I$, entonces $I = R$.
+    \end{observacion}
+
+    \begin{proof}
+        Por definicion $I \subseteq R$, por lo que solo resta demostrar que $R \subset I$.
+
+        Sea $a \in R$, entonces:
+
+        \begin{equation*}
+            a = a \cdot I \quad 1 \in I \quad a \in R
+        \end{equation*}
+
+        por lo tanto $a \in I$, $\therefore R \subseteq I$.
+    \end{proof}
+
+    \begin{definicion}
+        Sea $R$ anillo conmutativo con identidad. Un ideal principal, es un ideal de la forma $(a)$, para algun $a \in R$.
+    \end{definicion}
+
+    \begin{definicion}
+        Sea $R$ un dominio enterio, diremos que $R$ es un dominio de ideales principales, si todos los ideales de $R$ son principales.
+    \end{definicion}
+
+    \begin{observacion}
+        Sean $I, J$ ideales del anillo $R$, si definimos:
+
+        \begin{equation}
+            I + J = \left\{ a + b \mid a \in I, b \in J \right\}
+        \end{equation}
+
+        Verificar que:
+        
+        \begin{enumerate}
+            \item $I + J$ es un ideal
+            \item $I \cap J$ es un ideal
+            \item $IJ := \left\{ \sum_{i=1}^n a_i b_i \mid n \in \mathbbm{N}, a \in I, b \in J \right\}$ es un ideal.
+        \end{enumerate}
+
+        \todo{Verificación asignada a tarea.}
+    \end{observacion}
+
+    \begin{observacion}
+        Tenemos que $\sfrac{R}{I}$ es un anillo con la suma y el producto correspondientes:
+
+        \begin{eqnarray}
+            (a + I) + (b + I) & := & (a + b) + I \\
+            (a + I) \cdot (b + I) & := & (a \cdot b) + I
+        \end{eqnarray}
+
+        entonces la función:
+
+        \begin{eqnarray*}
+            \varphi & := & R \to \sfrac{R}{I} \\
+             & & a \to a + I
+        \end{eqnarray*}
+
+        es un epimorfismo
+        \todo{Verificación asignada a tarea.}
+    \end{observacion}
