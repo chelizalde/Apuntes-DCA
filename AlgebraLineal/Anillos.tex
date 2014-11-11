@@ -66,3 +66,47 @@
     \begin{definicion}
         Un campo es un anillo con división, que ademas es conmutativo, es decir, un campo es un grupo abeliano con respecto a $(+)$ y a $(\cdot)$.
     \end{definicion}
+
+    \begin{definicion}
+        Un anillo conmutativo con identidad es un dominio entero si:
+
+        \begin{equation}
+            a \cdot b = 0 \implies a = 0 o b = 0
+        \end{equation}
+
+        Esto quiere decir que no existen divisores de cero.
+    \end{definicion}
+
+    \begin{corolario}
+        Si $p$ es primo, entonces $\mathbbm{Z}_p$ es campo.
+    \end{corolario}
+
+    \todo{Tarea:
+    Sea $\mathcal{M}_{2 \times 2}(\mathbbm{R}) = \left\{ \left. \begin{pmatrix} a & b \\ c & d \end{pmatrix} \right| a, b, c, d \in \mathbbm{R} \right\}$
+    Verificar que $\mathcal{M}_{2 \times 2}$ es un anillo con identidad no conmutativo y ademas no es dominio entero.}
+
+    \begin{proposicion}
+        Sea $R$ un anillo y sean $a, b \in R$, entonces:
+
+        \begin{enumerate}[a)]
+            \item $a \cdot 0 = 0 \cdot a = 0$
+            \item $a \cdot (-b) = (-a) \cdot b = - (a \cdot b)$
+            \item $(-a)(-b) = (-(-a)) \cdot b = a \cdot b$
+            \item $1 \in R \implies (-1) \cdot a = -a$
+        \end{enumerate}
+    \end{proposicion}
+
+    \begin{proof}
+        \begin{equation*}
+            a \cdot 0 + 0 = a \cdot 0 = a \cdot(0 + 0) = a \cdot 0 + a \cdot 0 \implies 0 = a \cdot 0
+        \end{equation*}
+
+        \begin{equation*}
+            a \cdot (-b) + a \cdot b = a \cdot (-b + b) = a \cdot (0) = 0 \implies a \cdot (-b) = -(a \cdot b)
+        \end{equation*}
+
+        \begin{multline*}
+            (-a) \cdot (-b) + (-a) \cdot (b) = (-a) \cdot (-b + b) = (-a) \cdot (0) = 0 \\
+            \implies (-a) \cdot (-b) = -(-a) \cdot (b) = (-(-a)) \cdot (b)
+        \end{multline*}
+    \end{proof}
