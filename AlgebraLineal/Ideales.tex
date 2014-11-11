@@ -1,0 +1,62 @@
+
+\newpage
+\section{Ideales, Homomorfismos y Anillos}
+    \begin{definicion}
+        Una función $\varphi: R \to R'$ es un homomorfismo si:
+
+        \begin{enumerate}
+            \item $\varphi(a) + \varphi(b) = \varphi(a + b)$
+            \item $\varphi(a) \cdot \varphi(b) = \varphi(a \cdot b)$
+        \end{enumerate}
+    \end{definicion}
+
+    \begin{definicion}
+        Sea $\varphi: R \to R'$ homomorfismo de anillos, entonces:
+        \begin{enumerate}
+            \item $\varphi$ es monomorfismo si es inyectivo
+            \item $\varphi$ es epimorfismo si es suprayectivo
+            \item $\varphi$ es isomorfismo si es biyectivo
+        \end{enumerate}
+    \end{definicion}
+
+    \begin{definicion}
+        El nucleo de $\varphi$ es $\ker{\varphi} = \left\{ x \in R \mid \varphi(x) = 0 \right\}$
+    \end{definicion}
+
+    \begin{proposicion}
+        Sea $\varphi:R \to R'$, es un homomorfismo de anillos, entonces:
+
+        \begin{enumerate}
+            \item $\ker{\varphi}$ es un subgrupo aditivo
+            \item $rk, kr \in \ker{\varphi} \quad \forall k \in \ker{\varphi} \quad r \in R$
+        \end{enumerate}
+    \end{proposicion}
+
+    \begin{proof}
+        Sea $k \in \ker{\varphi}$ y $r \in R$
+
+        \begin{eqnarray*}
+            \varphi(rk) & = & \varphi(r) \cdot \varphi(k) \\
+            & = & \varphi(r) \cdot 0 = 0
+        \end{eqnarray*}
+
+        \begin{eqnarray*}
+            \varphi(kr) & = & \varphi(k) \cdot \varphi(r) \\
+            & = & 0 \cdot \varphi(r) = 0
+        \end{eqnarray*}
+
+        \begin{equation*}
+            \therefore kr, rk \in \ker{\varphi}
+        \end{equation*}
+    \end{proof}
+
+    \begin{definicion}
+        Sea $R$ un anillo e $I$ un subconjunto de $R$, se dice que es un ideal de $R$ si:
+
+        \begin{enumerate}[i)]
+            \item $I$ es un subgrupo aditivo de $R$
+            \item Dados $r \in R$ y $a \in I$, tenemos que $ra \in I$ y $ar \in I$
+        \end{enumerate}
+
+        a esto se le conoce como propiedad de absorción.
+    \end{definicion}
