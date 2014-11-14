@@ -121,7 +121,7 @@
         \end{equation}
 
         Verificar que:
-        
+
         \begin{enumerate}
             \item $I + J$ es un ideal
             \item $I \cap J$ es un ideal
@@ -149,3 +149,135 @@
         es un epimorfismo
         \todo{Verificación asignada a tarea.}
     \end{observacion}
+
+    \begin{observacion}
+        Tenemos que $\sfrac{R}{I}$ es un anillo con la suma y productos correspondientes:
+
+        \begin{eqnarray}
+            (a + I) + (b + I) & := & a + b + I \\
+            (a + I) \cdot (b + I) & := & ab + I
+        \end{eqnarray}
+
+        La función:
+
+        \begin{eqnarray}
+            \varphi : R & \to & \sfrac{R}{I} \\
+            a & \to & a + I
+        \end{eqnarray}
+
+        es epimorfismo.
+    \end{observacion}
+
+    \begin{proof}
+        Primero checamos que $\varphi$ es un homomorfismo:
+
+        \begin{eqnarray*}
+            \varphi(a+b) & = & a+b+I = (a+I) + (b+I) = \varphi(a) + \varphi(b) \\
+            \varphi(ab) & = & ab+I =(a+I)(b+I) = \varphi(a) \varphi(b)
+        \end{eqnarray*}
+
+        y por contrucción $\varphi$ es sobre, por lo tanto $\varphi$ es un epimorfismo.
+    \end{proof}
+
+    \todo{Tarea: Verificar que el nucleo de $\varphi$ definido como $\ker{\varphi} = \{ a \in R \mid \varphi(a) = 0 + I \}$ coincide con el ideal I.}
+
+    \subsection{Teoremas de Isomorfismos de Anillos}
+
+        \begin{teorema}
+            Sea $\varphi: R \to R'$ un epimorfismo de anillos y $k = ker{\varphi}$, entonces $\sfrac{R}{k}$ es isomorfo con $R'$ es decir:
+
+            \begin{equation}
+                \sfrac{R}{k} \cong R'
+            \end{equation}
+        \end{teorema}
+
+        \begin{teorema}
+            Sea $R$ anillo, sean $A$ un subconjunto de $R$ ($A$ subanillo de $R$), y sea $B$ un ideal de $R$. Entonces $A+B$ es un subanillo de $R$ ideal de $A$, ademas:
+
+            \begin{equation}
+                \sfrac{A+B}{B} \cong \sfrac{A}{A \cap B}
+            \end{equation}
+        \end{teorema}
+
+        \begin{teorema}
+            Sean $I, J$ ideales del anillo $R$ con $I \subset J$, entonces $\sfrac{J}{I}$ es ideal de $\sfrac{R}{I}$, ademas:
+
+            \begin{equation}
+                \sfrac{\sfrac{R}{I}}{\sfrac{J}{I}} \cong \sfrac{R}{J}
+            \end{equation}
+        \end{teorema}
+
+        \begin{ejemplo}
+            Sea $n \in \mathbbm{N}$, $n > 1$ y
+
+            \begin{eqnarray*}
+                \varphi: \mathbbm{Z} & \to & \mathbbm{Z}' \\
+                a & \to & [a]
+            \end{eqnarray*}
+
+            es decir, $\varphi$ es un epimorfismo con:
+
+            \begin{eqnarray*}
+                [a+b] & = & [a] + [b] \\[2pt]
+                [ab] & = & [a][b]
+            \end{eqnarray*}
+
+            su nucleo es:
+
+            \begin{eqnarray*}
+                ker{\varphi} & = & \left\{ a \in \mathbbm{Z} \mid \varphi(a) = [a] = [0] \right\} \\
+                & = & \left\{ a \in \mathbbm{Z} \mid a \cong 0 \mod{n} \right\} \\
+                & = & \left\{ a \in \mathbbm{Z} \mid \sfrac{n}{a} \right\} \\
+                & = & \left\{ a \in \mathbbm{Z} \mid a = n z, z\in \mathbbm{Z} \right\} = n \mathbbm{Z}
+            \end{eqnarray*}
+
+            por lo que aplicando el primer teorema de isomorfismos tenemos:
+
+            \begin{equation*}
+                \sfrac{\mathbbm{Z}}{n \mathbbm{Z}} \cong \mathbbm{Z}'
+            \end{equation*}
+        \end{ejemplo}
+
+        \begin{ejemplo}
+            Sea $F$ un campo (anillo conmutativo con división), entonces $\{0\}$ es un ideal de $F$. Sea $I$ un ideal diferente de este, $I \ne \{ 0 \}$.
+
+            Tenemos $a \in I, a \ne 0$, entonces $a^{-1} a = 1$, con $a^{-1} \in F$, por lo que $a^{-1} a = 1 \in I$.
+
+            Sea $r \in F$, por lo que $r = 1 \cdot r$, con $1 \in I$ y $r \in F$, pero $r$ es cualquier elemento de $F$, por lo que podemos decir que $F \subseteq I$, pero por definición $I \subseteq F$, por lo que este idel es el mismo campo.
+
+            \begin{equation*}
+                F = I
+            \end{equation*}
+        \end{ejemplo}
+
+        \begin{ejemplo}
+            Sea $R = \left\{ f:[0, 1] \to R \mid f es continua \right\}$. Definimos tambien:
+
+            \begin{eqnarray*}
+                (f+g)(x) & := & f(x) + g(x) \\
+                (f \cdot g) & := & f(x) \cdot g(x)
+            \end{eqnarray*}
+
+            $R$ es un anillo con identidad.
+
+            Definimos el nucleo como:
+
+            \begin{equation*}
+                I := \left\{ f \in R \mid f \left( \frac{1}{2} \right) = 0 \right\}
+            \end{equation*}
+
+            con un $\varphi$:
+
+            \begin{eqnarray}
+                \varphi: R & \to & R \\
+                f & \to & f \left( \frac{1}{2} \right)
+            \end{eqnarray}
+
+            esto implica que:
+
+            \begin{equation*}
+                \sfrac{R}{I} \cong R
+            \end{equation*}
+
+            \todo{Demostración asignada a tarea}
+        \end{ejemplo}
