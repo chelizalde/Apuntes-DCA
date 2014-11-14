@@ -12,6 +12,7 @@
 \usepackage{enumerate}
 \usepackage{tikz}
 \usepackage{todonotes}
+\usepackage{xfrac}
 
 \usetikzlibrary{shapes, arrows, decorations.markings}
 
@@ -19,11 +20,19 @@
 \numberwithin{equation}{chapter}
 
 \newtheorem{definicion}{Definición}
+\numberwithin{definicion}{chapter}
 \newtheorem{lema}{Lema}
+\numberwithin{lema}{chapter}
 \newtheorem{teorema}{Teorema}
+\numberwithin{teorema}{chapter}
 \newtheorem{ejemplo}{Ejemplo}
+\numberwithin{ejemplo}{chapter}
 \newtheorem{proposicion}{Proposición}
+\numberwithin{proposicion}{chapter}
 \newtheorem{observacion}{Obsevación}
+\numberwithin{observacion}{chapter}
+\newtheorem{corolario}{Corolario}
+\numberwithin{corolario}{chapter}
 %--------------------------------------
 %       TITULO
 %--------------------------------------
@@ -47,6 +56,8 @@
     \chapter{Homorfismos de grupo}
       \input{Homomorfismos.tex}
     \chapter{Anillos}
+      \input{Anillos.tex}
+      \input{Ideales.tex}
     \chapter{Dominios}
 %--------------------------------------
 %       ALGEBRA LINEAL
