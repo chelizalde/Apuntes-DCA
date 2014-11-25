@@ -1,0 +1,97 @@
+\input{Estilo/Main1.tex}
+
+\title{Espacios Vectoriales}
+\author{Christian}
+
+\begin{document}
+		\maketitle
+		\tableofcontents
+    	
+
+\begin{definicion}
+		
+			Un espacio vectorial consta de lo siguiente 
+			\end{definicion}
+		\begin{enumerate}
+				\item Un campo $\mathbb{F}$ de escalares
+				\item Un conjunto no vacio de objetos denominados vectores 
+				\item Una operaci\'on de nominada suma o adici\`on que asocia a cada par de vectores $\alpha , \beta \in V $ un vector $\alpha + \beta \in V $ llamado suma de $\alpha$ y $\beta$ que cumple lo siguiente.
+		\end{enumerate}
+		
+
+	\begin{definicion}
+		 Un espacio vectorial, $\mathcal{B}$ , es un conjunto de elementos $x,y,z,etc.,$ llamados vectores satisfaciendo  los siguientes axiomas.
+	\end{definicion}
+	 \begin{enumerate}[a]
+	 	\item  Para cadapar $x$ y $y$, de vectores en $\mathcal{B}$ corresponde un vector $z$, llamada la suma de $x$ y $y$, $z=x+y$, de manera que \begin{enumerate}
+	 		\item La adci\`on es conmutativa, $x+y=y+x$;
+	 		\item La adici\`on es asociativa, $x+(y+z)=(x+y)+z$;
+	 		\item Exite en $\mathcal{B}$ un unico vector 0 (llamado el origen) de tal manera que para todo $x$ en $\mathcal{B},x+0=0$;
+	 		\item Para cada $x\in \mathcal{B}$ corresponde a un unico vector, denotado por $-x$, con  la propiedad $x+(-x)=0$ 
+	 	\end{enumerate}  
+	 \end{enumerate}
+
+		\begin{definicion}
+	Se dice $\beta \in V $ es una combinacion lineal de Vectores $\alpha_1 , \dots ,\alpha_n $ si existen $C_1 , \dots , C_n \in \mathbb{F}$ tales que
+	 \end{definicion}
+	   \begin{equation}
+	   			\beta = \sum \limits_{i=1}^n \nonumber
+	   \end{equation}
+
+	\begin{definicion}
+	  Un subespacio de V en $\mathbb{F}$  es un subconjunto W de V que con las operaciones heredadas de V, es el mismo un e.v. sobre $\mathbb{F}$ 
+\end{definicion}
+
+\emph{NOTA Si V es un e.v., V y $\{ \vec{0} \}$ se denomina los subespacios triviales de V. } 
+
+\begin{proposicion}
+	 Un subconjunto no vac\`io W de V es un subespacio vectorial ssi W es cerrado con respecto a las operaciones de V
+\end{proposicion}
+
+\begin{definicion}
+	Sean $\alpha_1 , \dots , \alpha_n$ en V y $\mathcal{L} (\alpha_1 , \dots , \alpha_n)= \{ B | B $ es la combianci\`on lineal de $\alpha_1 , \dots , \alpha_n \}$ esto es un s.e.v. de V y se llama subespacio generado por $\alpha_i \ \ 1 \leq i \leq k$, o bien se dice que $\alpha_1, \dots , \alpha_k$ generan a $\mathcal{L}(\alpha_1, \dots , \alpha_k)$ 
+\end{definicion}
+					\begin{proposicion}
+						La interseci\`on de cualquier colecci\`on de subescaios de V es un subespacio de V
+					\end{proposicion}
+
+			\emph{OBSERVACI\`ON La uni\`on de subespacios no necesariamente es s.e.v.} 
+
+
+		\begin{definicion}
+			Sean S,T subespacios de V, definimos la suma de S y T como 
+		\end{definicion}
+			\begin{equation}
+				S+T = \{ s+t | s \in S , t \in T \} \nonumber
+			\end{equation}
+
+		\begin{proposicion}
+				Si S y T son subesapcios de V, entonces S$+$T es s.e.v. de V
+		\end{proposicion}
+
+			\begin{definicion}
+				Si S y T son s.e.v. de  V tales que S$+$T son s.e.v. de V tales que $S+T = V $ y $S \cap T = \{ 0 \}$ decimos que Ves la suma directa de S y  T y lo denotamos como sigue: 
+			\end{definicion}
+				\begin{equation*}
+					V = S \oplus T 
+				\end{equation*}
+
+					\begin{proposicion}
+						Si $V= S \oplus T$ entoces $\forall \alpha \in V \exists n$ unicos s,t tales que 
+					\end{proposicion}
+							\begin{equation*}
+								\alpha = s + t
+							\end{equation*}
+						\begin{definicion}
+										Los vectores $\alpha_1 , \dots , \alpha_k$ se dicen lienalmente  independientes si $\exists n $ escalares $a_1 , \dots , a_k$ no todos ceros tales que 		
+											\end{definicion}					
+												\begin{equation*}
+													\sum \limits_{i=1}^k \alpha_i a_i = 0
+												\end{equation*}
+						\begin{definicion}
+							Un conjunto A de vectores se dice l.i. si cualquier subconjunto finito de A es l.i. 
+						\end{definicion}
+						\begin{definicion}
+							Un conjunto A de vectores de dice l.d. si existe un subconjunto finito de A no vac\`io que sea l.d.
+						\end{definicion}
+\end{document}

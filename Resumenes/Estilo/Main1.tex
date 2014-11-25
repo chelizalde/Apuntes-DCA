@@ -1,0 +1,44 @@
+%--------------------------------------
+%       CONFIGURACIONES
+%--------------------------------------
+\documentclass{tufte-handout}
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{todonotes}
+\usepackage{xfrac}
+
+
+\usetikzlibrary{shapes, arrows, decorations.markings}
+
+
+
+%--------------------------------------
+%       definiciones
+%--------------------------------------
+
+\newtheorem{definicion}{Definición}
+
+\newtheorem{lema}{Lema}
+
+\newtheorem{teorema}{Teorema}
+
+\newtheorem{nota}{Nota}
+
+\newtheorem{corolario}{Corolario}
+ 
+\newtheorem{proposicion}{Proposición}
+
+\DeclareMathOperator{\rango}{rango}
+
+\newcommand{\tarea}[2][]
+    {\todo[linecolor=black!50!white, backgroundcolor=black!30!white, bordercolor=black!30!white, #1]{#2}}
+
+\newcommand{\faltante}[2][]
+    {\todo[linecolor=red!50!white, backgroundcolor=red!30!white, bordercolor=red!30!white, #1]{#2}}
